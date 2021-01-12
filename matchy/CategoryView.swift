@@ -19,19 +19,19 @@ struct CategoryView: View {
                         Image("Food Button")
                     }
                     NavigationLink(destination:
-                        MovieView()) {
+                                    MovieView(movies: Movie.allMovies)) {
                         Image("Movies")
                     }
                     NavigationLink(destination:
-                        GameView()) {
+                                    GameView(games: Game.allGames)){
                         Image("Games")
                     }
-                    NavigationLink(destination: ActivityView()) {
+                  NavigationLink(destination: ActivityView(activities: Activity.allActivities)) {
                         Image("Activities")
                     }
                 }
             }
-//            .navigationTitle("Categories")
+            //            .navigationTitle("Categories")
         }
     }
 }

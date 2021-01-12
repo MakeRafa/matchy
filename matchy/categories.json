@@ -2,6 +2,7 @@
     {
         "image": "chipotle"
     {
+
         "image": "mcdonalds"
     },
     {
@@ -11,15 +12,39 @@
         "image": "chickfila"
     },
     {
-        "game": "minecraft"
+        "image": "minecraft"
     },
     {
-        "game": "halo"
+        "image": "halo"
     },
     {
-        "game": "wwe"
+        "image": "wwe"
     },
     {
-        "game": "hearthstone"
+        "image": "hearthstone"
+    },
+    {
+      "image": "up"
+    },
+    {
+      "image": "cars"
+    },
+    {
+      "image": "spiderman"
+    },
+    {
+      "image": "brave"
+    },
+    {
+      "image": "picnic"
+    },
+    {
+      "image": "hike"
+    },
+    {
+      "image": "swim"
+    },
+    {
+      "image": "study"
     },
 ]

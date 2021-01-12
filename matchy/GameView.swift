@@ -7,21 +7,50 @@
 
 import SwiftUI
 
-enum GameOption: String, CaseIterable {
-    case minecraft = "Minecraft"
-    case halo = "Halo"
-    case hearthstone = "Hearthstone"
-    case wwe = "WWE"
-}
-
 struct GameView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State var currentIndex = 0
+  let games: [Game]
+  
+  var body: some View{
+    
+    VStack{
+      Image("1")
+      Spacer()
+      
+      Image(games[currentIndex].image)
+        .resizable()
+        .scaledToFit()
+        .cornerRadius(40)
+        .padding()
+      Spacer()
+      HStack{
+        Button(action: {
+          nextGame()
+        }) {
+          Image("Nobutton")
+            .frame(width: 200)
+          
+        }
+        Button(action: {
+          nextGame()
+        }){
+          Image("YesButton")
+            .frame(width: 200)
+        }
+      }
     }
+  }
+  func nextGame() {
+    var newGame = Int.random(in: 0..<games.count)
+    while newGame == currentIndex {
+      newGame = Int.random(in: 0..<games.count)
+    }
+    currentIndex = newGame
+  }
 }
 
 struct GameView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
-    }
+  static var previews: some View {
+    GameView(games: Game.allGames)
+  }
 }

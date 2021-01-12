@@ -8,27 +8,48 @@
 import Foundation
 
 struct Restaurant {
-    let id: Int
-    let name: String
-    let image: String
-    
-    static let chipotle = Restaurant(id: 1, name: "Chipotle", image: "chipotle")
-    static let mcdonalds = Restaurant(id: 2, name: "McDonalds", image: "mcdonalds")
-    static let subway = Restaurant(id: 3, name: "Subway", image: "subway")
-    static let chickfila = Restaurant(id: 4, name: "Chick-fil-A", image: "chickfila")
-    
-    static let all = [chipotle, mcdonalds, subway, chickfila]
-    
+  let image: String
+  
+  static let chipotle = Restaurant(image: "chipotle")
+  static let mcdonalds = Restaurant(image: "mcdonalds")
+  static let subway = Restaurant(image: "subway")
+  static let chickfila = Restaurant(image: "chickfila")
+  
+  static let all = [chipotle, mcdonalds, subway, chickfila]
+  
 }
 
 struct Game {
-    let image: String
-
-    static let minecraft = Game(image: "minecraft")
-    static let halo = Game(image: "halo")
-    static let wwe = Game(image: "wwe")
-    static let hearthstone = Game(image: "hearthstone")
-    
-    static let all = [minecraft, halo, wwe, hearthstone]
-    
+  let image: String
+  
+  static let minecraft = Game(image: "minecraft")
+  static let halo = Game(image: "halo")
+  static let wwe = Game(image: "wwe")
+  static let hearthstone = Game(image: "hearthstone")
+  
+  static let allGames = [minecraft, halo, wwe, hearthstone]
+  
 }
+
+struct Movie {
+  let image: String
+  
+  static let up = Movie(image: "up")
+  static let cars = Movie(image: "cars")
+  static let spiderman = Movie(image: "spiderman")
+  static let brave = Movie(image: "brave")
+  
+  static let allMovies = [up, cars, spiderman, brave]
+}
+
+struct Activity {
+  let image: String
+  
+  static let hike = Activity(image: "hike")
+  static let study = Activity(image: "study")
+  static let picnic = Activity(image: "picnic")
+  static let swim = Activity(image: "swim")
+  
+  static let allActivities = [hike, swim, picnic, study]
+}
+
