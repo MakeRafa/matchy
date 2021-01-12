@@ -10,28 +10,28 @@ import SwiftUI
 struct CategoryView: View {
     var body: some View {
         NavigationView{
-            VStack(spacing: 100){
+            VStack(spacing: 90){
                 Text("Categories")
                     .font(.title)
                     .fontWeight(.bold)
-                HStack(spacing: 100){
-                    NavigationLink(destination: ContentView()) {
-                        Text("Food")
+                VStack(spacing: 30){
+                    NavigationLink(destination: FoodView(restaurants: Restaurant.all)) {
+                        Image("Food Button")
                     }
-                    NavigationLink(destination: ContentView()) {
-                        Text("Movies")
+                    NavigationLink(destination:
+                        MovieView()) {
+                        Image("Movies")
                     }
-                }
-                
-                HStack(spacing: 100){
-                    NavigationLink(destination: ContentView()) {
-                        Text("Games")
+                    NavigationLink(destination:
+                        GameView()) {
+                        Image("Games")
                     }
-                    NavigationLink(destination: ContentView()) {
-                        Text("Activities")
+                    NavigationLink(destination: ActivityView()) {
+                        Image("Activities")
                     }
                 }
             }
+//            .navigationTitle("Categories")
         }
     }
 }

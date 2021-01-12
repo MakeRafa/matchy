@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         VStack{
-            Text("Matchy")
-            Spacer()
+            Image("1")
             
-            Text("")
+            Text("dsf")
+                .font(.title)
                 .frame(maxWidth: .infinity, maxHeight: 600)
                 .background(Color.gray.opacity(0.3))
                 .cornerRadius(20)
@@ -21,17 +22,21 @@ struct ContentView: View {
             
             Spacer()
             HStack{
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    
+                    
+                }) {
                     Image("Nobutton")
                         .frame(width: 200)
                     
                 }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/){
+                Button(action: {
+                    
+                }){
                     Image("YesButton")
                         .frame(width: 200)
                 }
             }
-            
         }
     }
 }

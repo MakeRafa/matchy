@@ -11,7 +11,7 @@ import SwiftUI
 struct matchyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FoodView(restaurants: Restaurant.all)
         }
     }
 }
